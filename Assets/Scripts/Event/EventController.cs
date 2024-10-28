@@ -9,5 +9,5 @@ public class EventController
 
     public void AddListner(Action listner) => baseEvent += listner;
     public void RemoveListner(Action listner) => baseEvent -= listner;
-    public void Invoke() => baseEvent?.Invoke();
+    public void InvokeEvent() => baseEvent?.Invoke();
 }
